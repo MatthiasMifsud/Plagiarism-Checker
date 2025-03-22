@@ -1,4 +1,4 @@
-# News Similarity Checker
+# Plagiarism Checker
 
 This repository contains Python scripts designed to scrape news articles, preprocess text, and calculate text similarity using TF-IDF and cosine similarity. The primary goal is to identify significant similarities between a user-provided text and content from various news sources. (Note: can be altered to work for things other than news sources e.g: journals)
 
