@@ -18,7 +18,12 @@ if __name__ == "__main__":
         "https://mirror.co.uk","https://drudgereport.com","https://thehill.com"
         ]
     
-    user_file_name = 'Plagiarism Check/text.txt'
+    subset_news_links = [
+        "https://bbc.com","https://nytimes.com","https://msn.com",
+        "https://cnn.com","https://news.google.com","https://theguardian.com"
+    ]
+    
+    user_file_name = 'Plagiarism Check/Scraper/text.txt'
 
-    combiner = Combiner(english_news_links, user_file_name)
+    combiner = Combiner(subset_news_links, user_file_name)
     combiner.runner()

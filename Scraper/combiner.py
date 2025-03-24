@@ -14,8 +14,8 @@ class Combiner:
     def runner(self):
         self.scraper.parallel_news_scraping()
         user_text_processed = self.processor.preprocessing(self.user_text)
-        url_processed = {url: self.processor.preprocessing(text) for url, text in self.scraper.texts.items()}
+        article_url_processed = {article_url: self.processor.preprocessing(text) for article_url, text in self.scraper.texts.items()}
 
         print(f"Extracted {sum(self.scraper.length.values())} paragraphs. {self.scraper.length}")
 
-        self.similarity.tfid_calc(url_processed, user_text_processed)
+        self.similarity.tfid_calc(article_url_processed, user_text_processed)
